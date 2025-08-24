@@ -8,12 +8,19 @@ function Bievenido() {
   const jugar = async () => {
     navigate("/jugadores");
   }
+  const historial = async () => {
+    navigate("/historial");
+  }
 
   return (
-    <div className="app-container">
-      <h1>⚔️ Batalla de Números</h1>
-      <button onClick={jugar}>🎮 Jugar</button>
+    <div className="app-container ">
+      <h1>Batalla de numeros</h1>
+      <button className="Button-Inicio" onClick={jugar}>Jugar</button>
+      <br></br>
+       <br></br>
+      <button className="Button-Inicio" style={{ backgroundColor: "#af4c4c" }}  onClick={jugar}>Historial</button>
     </div>
+    
   );
 }
 

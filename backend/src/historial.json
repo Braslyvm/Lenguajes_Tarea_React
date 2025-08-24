@@ -1,0 +1,110 @@
+{
+  "partidas": [
+    {
+      "ganador": "Juan",
+      "perdedor": "Ana",
+      "intentosGanador": [
+        5,
+        3,
+        3
+      ],
+      "intentosPerdedor": [
+        7,
+        3,
+        9
+      ]
+    },
+    {
+      "ganador": "Carlos",
+      "perdedor": "María",
+      "intentosGanador": [
+        2,
+        4,
+        6
+      ],
+      "intentosPerdedor": [
+        1,
+        78,
+        5
+      ]
+    },
+    {
+      "ganador": "Sofía",
+      "perdedor": "Luis",
+      "intentosGanador": [
+        10,
+        15,
+        20
+      ],
+      "intentosPerdedor": [
+        12,
+        90,
+        18
+      ]
+    },
+    {
+      "ganador": "weqr",
+      "perdedor": "wer",
+      "intentosGanador": [
+        2,
+        4,
+        2
+      ],
+      "intentosPerdedor": [
+        3,
+        2,
+        16
+      ]
+    },
+    {
+      "ganador": "weqr",
+      "perdedor": "wer",
+      "intentosGanador": [
+        2,
+        4,
+        2
+      ],
+      "intentosPerdedor": [
+        3,
+        2,
+        16
+      ]
+    },
+    {
+      "intentosGanador": [],
+      "intentosPerdedor": []
+    },
+    {
+      "intentosGanador": [],
+      "intentosPerdedor": []
+    },
+    {
+      "ganador": "raul",
+      "perdedor": "wer",
+      "intentosGanador": [
+        2,
+        2,
+        2
+      ],
+      "intentosPerdedor": [
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "ganador": "raul",
+      "perdedor": "wer",
+      "intentosGanador": [
+        2,
+        2,
+        2
+      ],
+      "intentosPerdedor": [
+        2,
+        2,
+        3
+      ]
+    }
+  ]
+}

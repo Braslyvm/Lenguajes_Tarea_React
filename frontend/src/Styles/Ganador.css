@@ -1,0 +1,74 @@
+.contenedor-ganador{
+    display: flex;              
+    flex-direction: column;      
+    justify-content: center;    
+    align-items: center;           
+    height: auto;                
+    width: auto;       
+}
+
+
+.contenedor-Grande {
+    min-height: 120px;                
+    width: 70vh;                       
+    max-width: 900px;            
+    background: linear-gradient(135deg, rgba(255,255,255,0.8), rgba(245,245,245,0.5));
+    backdrop-filter: blur(6px);         
+    display: flex;      
+    align-items: center; 
+    justify-content: center;            
+    flex-direction: column;  
+    padding: 20px 40px;                 
+    border-radius: 20px;    
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    margin: 15px auto;                   
+    text-align: center;                  
+    font-size: 1.2rem;                  
+    font-weight: 600;                   
+    color: #333;                        
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contenedor-Grande:hover {
+    transform: scale(1.03);              
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+.juego {
+    display: flex;              
+    justify-content: space-between;        
+    justify-content: center;     
+    align-items: center;         
+    height: 80px;        
+    width: 50vh;         
+    background-color: rgba(245, 245, 245, 0.5);
+    padding: 0 80px; 
+    border-radius: 20px;   
+    margin: 5px; 
+    gap: 40px;
+}
+
+
+.boton-salir {
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: #e74c3c; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.boton-salir:hover {
+    background-color: #c0392b; 
+}
+
+
+
+
+
+
+

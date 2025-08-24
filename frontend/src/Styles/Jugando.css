@@ -1,0 +1,150 @@
+.contenedor-Nombres {
+    height: 100px;        
+    width: 150vh;         
+    background-color: rgba(245, 245, 245, 0.5); 
+    display: flex;      
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 80px; 
+    border-radius: 20px;    
+}
+.ronda {
+    text-align: center;
+    flex: 1; 
+}
+
+.display-Juego {
+    display: flex;              
+    flex-direction: column;     
+    justify-content: center;     
+    align-items: center;         
+    height: 80px;        
+    width: 50vh;         
+    background-color: rgba(245, 245, 245, 0.5);
+    padding: 0 80px; 
+    border-radius: 20px;    
+}
+
+.contenedor-Nombres > :first-child {
+    margin-left: 0;  
+}
+
+.contenedor-Nombres > :last-child {
+    margin-left: auto;  
+}
+
+.Contenedor-Juego-Principal{
+    display: flex;              
+    flex-direction: column;      
+    justify-content: center;    
+    align-items: center;        
+    height: auto;                
+    width: auto;       
+}
+
+
+.Tablero-Juego {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(245, 245, 245, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Tablero-Juego {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(245, 245, 245, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Tablero-Juego h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.grid-numeros {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-auto-rows: 50px;                  
+  gap: 5px;
+  width: 100%;
+}
+
+.numero-boton {
+  width: 100%;  
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.numero-boton:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+}
+
+
+#contenedor-popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1000; 
+}
+h1 {
+  text-align: center;
+}
+.ventana-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 120px 180px;
+  border-radius: 20px;
+}
+
+.contenido-popup {
+  text-align: center;
+}
+
+.contenido-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.tutorial{
+  text-align: center;
+}
+
+
+
+.Carta-jugador{
+  width: 10%;
+  text-align: center;
+  border-radius: 10%;
+
+}
+
