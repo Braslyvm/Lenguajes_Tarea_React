@@ -74,7 +74,8 @@ function ganador (primero,segundo){
 }
 
 // POST para iniciar el juego con los nombres de los jugadores
-// Resetea todas las variables al iniciar un jueego
+// Resetea todas las variables al iniciar un juego
+// Recibe un JSON con los nombres de los jugadores
 router.post('/jugando', (req, res) => {
   const { jugador1, jugador2 } = req.body;
   jugadores = [jugador1, jugador2];
@@ -90,7 +91,7 @@ router.post('/jugando', (req, res) => {
 });
 
 // GET para obtener el historial de partidas desde un archivo JSON
-//
+// Devuelve un lista de partidas jugadas
 router.get('/historial', (req, res) => {
   const fs = require('fs');
   const path = require('path');
@@ -102,6 +103,7 @@ router.get('/historial', (req, res) => {
   
 
 // GET para cambiar orden de jugadores aleatoriamente
+// determina quien empieza primero
 router.get('/jugando', (req, res) => {
   let cambio = Math.floor(Math.random() * 2);
   prender1();
@@ -124,6 +126,7 @@ router.post('/numero', (req, res) => {
 
 
 // GET para validar si el juego ha terminado (6 juegos)
+// Retorna true si el juego ha terminado, false en caso contrario
 router.get('/Fin', (req, res) => {
   if (juegos === 6){
     return res.json({ valido: true });
@@ -136,6 +139,7 @@ router.get('/Fin', (req, res) => {
 // GET para validar el número ingresado por el jugador
 // Si es correcto, cambia de turno y resetea rondas
 // Si es incorrecto, incrementa las rondas
+// Retorna una variable con "valido": true si es correcto, false si no lo es
 router.get('/Validar', (req, res) => {
   const { numero } = req.query;
   if (parseInt(numero) === randomNumber) {
@@ -162,7 +166,7 @@ router.get('/Validar', (req, res) => {
 
 // GET para determinar el ganador al finalizar los 6 juegos
 // Guarda el resultado en un archivo JSON
-
+// Retorna un JSON con el ganador, perdedor, intentos y tiempos
 router.get('/ganador', (req,res)=>{
   let intento1n = intentos1[0]+intentos1[1]+intentos1[2];
   let intento2n = intentos2[0]+intentos2[1]+intentos2[2];
