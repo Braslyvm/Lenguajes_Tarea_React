@@ -33,6 +33,9 @@ function jugando() {
 
   }, []);
 
+
+
+
   // Cunado preciona un numero consulata con el backend si es el correcto
   // si es el correcto muestra un popup , cambia el turno y enciende los botones presionados
   // si no es el correcto muestra que tan cerca esta
@@ -72,7 +75,7 @@ function jugando() {
   const closePopup = () => {
     setPopupOpen(false);
   };
-  //devuelve a la pantalla de inicio
+  
   const handleSalir = () => {
         navigate("/"); 
     };

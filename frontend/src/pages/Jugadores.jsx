@@ -11,7 +11,7 @@ function Jugadores() {
   // Envia los nombres de los jugadores al backend y inicia el juego
   const cargarJugadores = async (e) => {
     e.preventDefault(); 
-      await fetch("http://localhost:3000/api/jugando/jugando", {
+      await fetch("http://localhost:3000/api/jugando/Iniciar", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ jugador1, jugador2 })

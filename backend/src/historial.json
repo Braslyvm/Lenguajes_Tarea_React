@@ -79,6 +79,22 @@
       ],
       "tiempoGanador": 18,
       "tiempoPerdedor": 45
+    },
+    {
+      "ganador": "brasly",
+      "perdedor": "elder",
+      "intentosGanador": [
+        2,
+        4,
+        2
+      ],
+      "intentosPerdedor": [
+        9,
+        3,
+        3
+      ],
+      "tiempoGanador": 137,
+      "tiempoPerdedor": 286
     }
   ]
 }
