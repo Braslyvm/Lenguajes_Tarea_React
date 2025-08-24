@@ -9,3 +9,19 @@ body {
   overflow: hidden;
   border-radius: 20px;
 }
+
+.boton-salir {
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: #e74c3c; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.boton-salir:hover {
+    background-color: #c0392b; 
+}

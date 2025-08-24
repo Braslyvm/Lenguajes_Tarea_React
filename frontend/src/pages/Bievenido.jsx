@@ -1,13 +1,14 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom"; // <--- Importamos useNavigate
+import { useNavigate } from "react-router-dom"; 
 import "../Styles/App.css";
 
 function Bievenido() {
   const navigate = useNavigate();
-
+  // redirije a la interfaz de jugadores
   const jugar = async () => {
     navigate("/jugadores");
   }
+  // redirije a la interfaz de historial
   const historial = async () => {
     navigate("/historial");
   }
@@ -18,7 +19,7 @@ function Bievenido() {
       <button className="Button-Inicio" onClick={jugar}>Jugar</button>
       <br></br>
        <br></br>
-      <button className="Button-Inicio" style={{ backgroundColor: "#af4c4c" }}  onClick={jugar}>Historial</button>
+      <button className="Button-Inicio" style={{ backgroundColor: "#af4c4c" }}  onClick={historial}>Historial</button>
     </div>
     
   );

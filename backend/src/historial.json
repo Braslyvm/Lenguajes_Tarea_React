@@ -12,7 +12,9 @@
         7,
         3,
         9
-      ]
+      ],
+      "tiempoGanador": 45,
+      "tiempoPerdedor": 60
     },
     {
       "ganador": "Carlos",
@@ -26,85 +28,57 @@
         1,
         78,
         5
-      ]
-    },
-    {
-      "ganador": "Sofía",
-      "perdedor": "Luis",
-      "intentosGanador": [
-        10,
-        15,
-        20
       ],
-      "intentosPerdedor": [
-        12,
-        90,
-        18
-      ]
+      "tiempoGanador": 45,
+      "tiempoPerdedor": 60
     },
     {
-      "ganador": "weqr",
-      "perdedor": "wer",
+      "ganador": "FDSA",
+      "perdedor": "aSFD",
       "intentosGanador": [
-        2,
-        4,
-        2
+        3,
+        5,
+        6
       ],
       "intentosPerdedor": [
         3,
-        2,
-        16
-      ]
+        4,
+        4
+      ],
+      "tiempoGanador": 16,
+      "tiempoPerdedor": 17
     },
     {
-      "ganador": "weqr",
-      "perdedor": "wer",
+      "ganador": "FDSA",
+      "perdedor": "aSFD",
       "intentosGanador": [
-        2,
-        4,
-        2
+        3,
+        5,
+        6
       ],
       "intentosPerdedor": [
         3,
-        2,
-        16
-      ]
+        4,
+        4
+      ],
+      "tiempoGanador": 16,
+      "tiempoPerdedor": 17
     },
     {
-      "intentosGanador": [],
-      "intentosPerdedor": []
-    },
-    {
-      "intentosGanador": [],
-      "intentosPerdedor": []
-    },
-    {
-      "ganador": "raul",
-      "perdedor": "wer",
+      "ganador": "ewq",
+      "perdedor": "elder",
       "intentosGanador": [
         2,
-        2,
-        2
+        4,
+        4
       ],
       "intentosPerdedor": [
-        2,
-        2,
+        3,
+        3,
         3
-      ]
-    },
-    {
-      "ganador": "raul",
-      "perdedor": "wer",
-      "intentosGanador": [
-        2,
-        2,
-        2
       ],
-      "intentosPerdedor": [
-        2,
-        2,
-        3
-      ]
+      "tiempoGanador": 18,
+      "tiempoPerdedor": 45
     }
   ]
 }

@@ -4,6 +4,7 @@ import "../Styles/Jugando.css";
 
 
 function jugando() {
+  // contastes y estado ha utilizar
   const navigate = useNavigate();
   const [jugador1, setJugador1] = useState("");
   const [jugador2, setJugador2] = useState("");
@@ -12,7 +13,9 @@ function jugando() {
   const [ronda, setRonda] = useState(0);
   const [isPopupOpen, setPopupOpen] = useState(false);
   const [turno,setTurno]= useState(0);
+  const numeros = Array.from({ length: 100 }, (_, i) => i + 1);
 
+  // Efecto para obtener los nombres de los jugadores 
   useEffect(() => {
     const obtenerJugadores = async () => {
       const res = await fetch("http://localhost:3000/api/jugando/jugando");
@@ -30,8 +33,9 @@ function jugando() {
 
   }, []);
 
-  const numeros = Array.from({ length: 100 }, (_, i) => i + 1);
-
+  // Cunado preciona un numero consulata con el backend si es el correcto
+  // si es el correcto muestra un popup , cambia el turno y enciende los botones presionados
+  // si no es el correcto muestra que tan cerca esta
   const Click = async (num) => {
     const leer = await fetch(`http://localhost:3000/api/jugando/Validar?numero=${num}`);
     const valor = await leer.json();
@@ -59,15 +63,19 @@ function jugando() {
     setRonda(dataRonda.rondas);
 
     
-    
+  // Desbloquea todos los botones
   }
   const activarTodos = () => {
     setOcultar([]); 
   };
-
+  // Cierra el popup
   const closePopup = () => {
     setPopupOpen(false);
   };
+  //devuelve a la pantalla de inicio
+  const handleSalir = () => {
+        navigate("/"); 
+    };
   return (
     <div className="Contenedor-Juego-Principal" >
       <div className="contenedor-Nombres">
@@ -108,11 +116,11 @@ function jugando() {
               <h1>¡Felicidades!</h1>
               <p>
                   {turno === 0
-                    ? `${jugador1} encontró el número 🎉`
-                    : `${jugador2} encontró el número 🎉`}
+                    ? `${jugador2} encontró el número 🎉`
+                    : `${jugador1} encontró el número 🎉`}
                 </p>
               <p>
-                Ahora es el turno de {turno === 0 ? jugador2 : jugador1}
+                Ahora es el turno de {turno === 0 ? jugador1 : jugador2}
               </p>
               <button className="contenido-button" onClick={closePopup}>
                 Cerrar
@@ -121,6 +129,10 @@ function jugando() {
           </div>
         </div>
       )}
+       <button className="boton-salir" onClick={handleSalir}>
+        Salir
+      </button>
+      
     </div>
   );
 }
