@@ -1,0 +1,8 @@
+a. Nombre del curso:  Lenguajes de programación
+b. Número de semestre y año lectivo: semestre 4, tercer año
+c. Nombre del Estudiante: Brasly Villarebia Morales
+d. Número de carnet del estudiante:2023105915
+e. Número de tarea: tarea 1
+f. Fecha de entrega: 24 del 8 del 2025
+g. Estatus de la entrega (debe ser CONGRUENTE con la solución entregada):
+|Excelente|
