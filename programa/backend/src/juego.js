@@ -145,7 +145,6 @@ router.get('/Fin', (req, res) => {
 router.get('/Validar', (req, res) => {
   
   const { numero } = req.query;
-  console.log(randomNumber)
   if (parseInt(numero) === randomNumber) {
     if (turno === 0) {
       intentos1.push(rondas + 1);
@@ -230,7 +229,6 @@ router.get('/rondas', (req, res) => {
   res.json({ rondas });
 });
 router.get('/turno', (req, res) => {
-  console.log(turno)
   res.json({ turno });
 
 
@@ -239,7 +237,6 @@ router.get('/turno', (req, res) => {
 // GET para dar pistas al jugador sobre si el número es mayor o menor
 router.get('/cercania', (req, res) => {
     const { numero } = req.query;
-    console.log(numero, randomNumber);
     if (numero < randomNumber) {
         return res.json({ mensaje: 'El número es mayor' });
     } else { 
